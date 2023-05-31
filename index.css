@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+
+    height: 100%; 
+background:  linear-gradient(to left, #0d0d0d 0%, rgb(15, 15, 15) 100%);
+}
+
+header{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+position: absolute;
+top: 0;
+height: 100px;
+z-index: 9999;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.section-text{
+    text-align: center;
+}
+.nav-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 15px;
+    border: 1px solid whitesmoke;
+    list-style-type: none;
+
+       font-weight: 800;
+       font-family: 'Kanit', sans-serif;
+    border-radius: 15px;
+}
+.offer-list, .question {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-family: 'Kanit', sans-serif;
+    margin-right: 30px;
+    text-align: center; /* center the text horizontally */
+    background-color: #f7f7f7; /* add a background color to the element */
+    padding: 20px; /* add some padding to the element */
+    border-radius: 10px; /* round the corners of the element */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle box-shadow to the element */
+  }
+  
+  .offer-list h2 {
+
+    font-size: 36px; /* increase the font size of the heading */
+    margin-bottom: 10px; /* add some spacing below the heading */
+  }
+  
+  .offer-list p {
+    font-size: 18px; /* adjust the font size of the paragraph */
+    line-height: 1.5; /* increase the line-height for better readability */
+    margin-bottom: 20px; /* add some spacing below the paragraph */
+  }
+.nav-buttom, a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.logo{
+    color:whitesmoke;
+    padding: 10px 10px;
+    font-size: 1.3em;
+    text-align: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    border: 4px solid white;
+    border-radius: 25px;
+    margin: 10px;
+    width: 175px;
+    height: 50px;
+}
+.nav-button:hover, .logo:hover, a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.nav-button:hover > a {
+    color: black;
+
+        border-bottom: 2px solid black;
+}
+
+.console-logo{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+.hero{
+  z-index: 0;
+    position: absolute;
+    width: 100%;
+
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+}
+.hero-text{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    position: absolute;
+display: flex;
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    z-index: 2;
+    border-radius: 25px;
+       top: 80%;
+    left: 80%;
+    transform: translate(-80%, -80%);
+    color: white;
+    font-size: 1.5em;
+        font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+}
+.container-text{
+margin-left: 1em;
+transition: opacity 0.5s ease-out;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+
+    color: black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+
+}
+
+.fa-hashtag{
+    position: relative;
+    font-size: 1.5em;
+    top: 25%;
+}
+.question h5 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-left: 5px solid #63a4ff;
+    padding-left: 10px;
+  }
+section{
+    width: 95%;
+    height: 160em;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 22px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+border: 10px solid black;
+border-radius: 25px;
+
+}
+h2, h4{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    border-bottom: 5px solid black;
+    margin: 1em;
+}
+h3{
+    text-align: center;
+        font-size: 3em;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.iconbox, .section-text, .prh, .question{
+ 
+
+    font-size: 1.5em;
+    font-weight: 800;
+
+    font-family: 'Kanit', sans-serif;
+}
+
+.iconbox{
+    margin: 0.5em;
+     font-size: 3em;
+    
+}
+
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.prh, .question{
+    text-align: center;
+}
+.offer-info{
+   display: flex;
+   justify-content: center;
+text-align: center;
+        width: 100%;
+}
+.offer-box{
+   margin-left: 50px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid lightgray;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+}
+.question{
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.offer-box:hover, .question:hover{
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+ }
+ .offer-text{
+    
+    font-size: 1.2em;
+    font-weight: 800;
+
+    font-family: 'Kanit', sans-serif;
+ }
+
+ footer {
+    width: 100%;
+    height: 20px;
+    position: fixed;
+bottom: 0;
+
+    background-color: #0d0d0d;
+  }
